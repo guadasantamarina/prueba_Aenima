@@ -1,0 +1,271 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 60px; 
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    #logoHeader{
+        position: absolute;
+        left: 15%;
+        width: 101px;
+        height: 19px;
+    }
+    #submenu{
+        position: absolute;
+        right: 20%;
+        ul{
+           font-family: 'Montserrat', sans-serif;
+           list-style: none;
+           display: flex;
+           flex-direction: row;
+           li{
+              padding: 3%;
+              a{
+                opacity: 1;
+                text-align: left;
+                letter-spacing: var(--unnamed-character-spacing-0);
+                text-decoration: none;
+                color: #CBD0D3;
+               }&:hover{
+                   a{
+                      color: #2A3037;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#principal{
+    position: relative;
+    background: transparent url(../Assets/img/Viajes_Hero.jpg) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    background-position: center;
+    width: 100% auto;
+    height: 40rem ;
+    #americaDelSur{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 48%;
+        height: 214px;
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        padding: 3%;
+        #title{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+            border-bottom-style: solid;
+            border-width: 2px;
+            padding-bottom: 2%;
+            
+            h1{
+                text-align: left;
+                font-size: 2.7rem;
+                text-align: left;
+            }
+        } 
+        #subtitle{
+            h2{
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+        } 
+    }
+    #proximaAventura{
+        background: var(--unnamed-color-2a3037) 0% 0% no-repeat padding-box;
+        border: 2px dashed var(--unnamed-color-ffffff);
+        background: #2A3037 0% 0% no-repeat padding-box;
+        border: 2px dashed #FFFFFF;
+        border-radius: 6px;
+        opacity: 0.7;
+        padding: 2%;
+        position: absolute;
+        bottom:  8%;
+        right: 8%;
+        width: 17rem;
+        height: 10rem;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        h3{
+            color: #FA6980;
+            margin-right: 10px;
+            font-size: 1rem;
+            padding-bottom: 2%;
+        }
+        #proxAventuraTitle{
+            display:inline-flex;
+            align-items: center;
+        }
+        h4{
+            padding-bottom: 2%;
+        }
+    }
+    #lineBox{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 7%;
+        left: 0%;
+        width: max-content;
+        #line{
+            background-color: #FA6980;
+            width: 20%;
+            height: 1%;
+        }
+        #number{
+            background-color: #FFFFFF;
+            padding: 2%;
+            border-radius: 50%;
+            bottom: 7%;
+        }
+    }
+
+    
+}
+
+#cuerpo{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(#EBEBEB 50%, #FFFFFF 30%, #FFFFFF);  
+    #tendencias{
+        padding: 7%;
+            h1{
+               color: #2A3037; 
+               padding-bottom: 2%;
+            }
+            #cards{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 1%;
+                .card{
+                    border-radius: 7px;
+                    background-color: #FFFFFF;
+                    box-shadow: 0px 3px 6px #00000029;
+                }
+                .cardImg{
+                    border-top-left-radius: 7px;
+                    border-top-right-radius: 7px;
+                }
+                .cardBody{
+                    padding: 13%;
+                    color: #2A3037; 
+                    .description{
+                        font-size: 13px;
+                    }
+                }
+                #nuevo{
+                    background-color: #FA6980;
+                    color: #FFFFFF;
+                    border-radius: 7px;
+                    width: fit-content;
+                    padding: 1%;
+                    position: absolute;
+                    top: 50%;
+                }
+            }
+        }
+        #blog{
+            padding: 7%;
+                h1{
+                    padding-bottom: 2%;
+                    color: #2A3037; 
+                 }
+                 #galleryContainer{
+                     display: flex;
+                     flex-direction: row;
+                     flex-wrap: wrap;
+                     gap: 2%;
+                     justify-content: space-between;
+                     #bigFotos{
+                         position: relative;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;
+                         color: #FFFFFF;
+                         .bigFoto1{
+                             background-image: url(../Assets/img/articulo_big_01.png);
+                             background-size:cover;
+                             background-position: center;
+                             background-repeat: no-repeat;
+                             position: relative;
+                             width: 43rem;
+                             height: 24rem;
+                             border-radius: 2%;
+                         }
+                         .bigFoto2{
+                             background-image: url(../Assets/img/articulo_big_02.png);
+                             background-size:cover; 
+                             background-position: center;
+                             background-repeat: no-repeat;
+                             position: relative;
+                             width: 43rem;
+                             height: 24rem;
+                             border-radius: 2%;
+                         }
+                         .bigArt{
+                             padding: 5%;
+                         }
+                         .bigArtTxt{
+                             position: absolute;
+                             bottom: 10%;
+                         }
+                     }
+                     #smallFoto{
+                         position: relative;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;   
+                         gap: 2%;            
+                         color: #202124;
+                         .artTitle{
+                             margin: 2%;
+                         }
+                     }
+                     .timer{
+                         display:inline-flex;
+                         align-items: center;
+                     }
+                }
+            
+        }   
+}
+
+footer{
+    padding: 5%;
+    position: relative;
+    background-color: #2A3037;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    #logoFooter{
+        position: absolute;
+        left: 10%;
+    }
+    #redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        right: 10%;
+    }
+}
+
+

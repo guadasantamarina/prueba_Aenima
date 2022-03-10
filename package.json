@@ -1,0 +1,18 @@
+{
+  "name": "maquetacion_aenima",
+  "version": "1.0.0",
+  "description": "maquetación proceso de prueba Aenima",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+   
+  },
+  "author": "Guadalupe Santamarina",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
