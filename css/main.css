@@ -1,44 +1,22 @@
 * {
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
 
-#header {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+header {
+  position: sticky;
+  top: 0%;
   z-index: 1; }
-  #header #logoHeader {
-    position: absolute;
-    left: 15%;
-    width: 101px;
-    height: 19px; }
-  #header #submenu {
-    position: absolute;
-    right: 20%; }
-    #header #submenu ul {
-      font-family: 'Montserrat', sans-serif;
-      list-style: none;
-      display: flex;
-      flex-direction: row; }
-      #header #submenu ul li {
-        padding: 3%; }
-        #header #submenu ul li a {
-          opacity: 1;
-          text-align: left;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          text-decoration: none;
-          color: #CBD0D3; }
-        #header #submenu ul li:hover a {
-          color: #2A3037; }
+  header nav {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1; }
+  header .logo {
+    margin-left: 10%; }
+  header .lista {
+    margin-right: 10%; }
 
 #principal {
   position: relative;
@@ -46,14 +24,13 @@
   background-size: cover;
   background-position: center;
   width: 100% auto;
-  height: 40rem; }
+  height: 50rem; }
   #principal #americaDelSur {
     position: absolute;
     top: 25%;
     left: 10%;
     width: 48%;
-    height: 214px;
-    font-family: 'Montserrat', sans-serif;
+    height: 20rem;
     color: #FFFFFF;
     padding: 3%; }
     #principal #americaDelSur #title {
@@ -65,10 +42,11 @@
       border-width: 2px;
       padding-bottom: 2%; }
       #principal #americaDelSur #title h1 {
-        text-align: left;
-        font-size: 2.7rem;
-        text-align: left; }
+        font-size: 2.5rem;
+        font-weight: bold; }
     #principal #americaDelSur #subtitle h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
       padding-top: 2%;
       padding-bottom: 2%; }
   #principal #proximaAventura {
@@ -80,45 +58,36 @@
     opacity: 0.7;
     padding: 2%;
     position: absolute;
-    bottom: 8%;
+    bottom: 15%;
     right: 8%;
-    width: 17rem;
-    height: 10rem;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif; }
+    width: max-content;
+    color: #FFFFFF; }
     #principal #proximaAventura h3 {
+      font-weight: bold;
       color: #FA6980;
       margin-right: 10px;
-      font-size: 1rem;
-      padding-bottom: 2%; }
+      font-size: 1.2rem; }
     #principal #proximaAventura #proxAventuraTitle {
       display: inline-flex;
-      align-items: center; }
-    #principal #proximaAventura h4 {
+      align-items: center;
       padding-bottom: 2%; }
-  #principal #lineBox {
-    display: flex;
-    flex-direction: row;
+    #principal #proximaAventura h4 {
+      padding-bottom: 2%;
+      font-size: 1rem;
+      font-weight: bold; }
+  #principal #lineBox #line {
+    background-color: #FA6980;
+    width: 15rem;
+    height: 0.5rem;
     position: absolute;
-    bottom: 7%;
-    left: 0%;
-    width: max-content; }
-    #principal #lineBox #line {
-      background-color: #FA6980;
-      width: 20%;
-      height: 1%; }
-    #principal #lineBox #number {
-      background-color: #FFFFFF;
-      padding: 2%;
-      border-radius: 50%;
-      bottom: 7%; }
+    bottom: 7%; }
 
 #cuerpo {
-  font-family: 'Montserrat', sans-serif;
   background-image: linear-gradient(#EBEBEB 50%, #FFFFFF 30%, #FFFFFF); }
   #cuerpo #tendencias {
     padding: 7%; }
     #cuerpo #tendencias h1 {
+      font-weight: bold;
       color: #2A3037;
       padding-bottom: 2%; }
     #cuerpo #tendencias #cards {
@@ -126,9 +95,10 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 1%; }
+      align-items: center;
+      justify-content: space-between; }
       #cuerpo #tendencias #cards .card {
+        margin-bottom: 2%;
         border-radius: 7px;
         background-color: #FFFFFF;
         box-shadow: 0px 3px 6px #00000029; }
@@ -138,19 +108,24 @@
       #cuerpo #tendencias #cards .cardBody {
         padding: 13%;
         color: #2A3037; }
+        #cuerpo #tendencias #cards .cardBody h5 {
+          font-weight: bold; }
         #cuerpo #tendencias #cards .cardBody .description {
           font-size: 13px; }
       #cuerpo #tendencias #cards #nuevo {
         background-color: #FA6980;
         color: #FFFFFF;
+        font-size: 1rem;
+        font-weight: bold;
         border-radius: 7px;
         width: fit-content;
-        padding: 1%;
+        padding: 3%;
         position: absolute;
-        top: 50%; }
+        top: 45%; }
   #cuerpo #blog {
     padding: 7%; }
     #cuerpo #blog h1 {
+      font-weight: bold;
       padding-bottom: 2%;
       color: #2A3037; }
     #cuerpo #blog #galleryContainer {
@@ -165,7 +140,7 @@
         flex-direction: column;
         justify-content: space-between;
         color: #FFFFFF; }
-        #cuerpo #blog #galleryContainer #bigFotos .bigFoto1 {
+        #cuerpo #blog #galleryContainer #bigFotos #bigFoto1 {
           background-image: url(../Assets/img/articulo_big_01.png);
           background-size: cover;
           background-position: center;
@@ -173,8 +148,9 @@
           position: relative;
           width: 43rem;
           height: 24rem;
-          border-radius: 2%; }
-        #cuerpo #blog #galleryContainer #bigFotos .bigFoto2 {
+          border-radius: 2%;
+          margin-bottom: 2%; }
+        #cuerpo #blog #galleryContainer #bigFotos #bigFoto2 {
           background-image: url(../Assets/img/articulo_big_02.png);
           background-size: cover;
           background-position: center;
@@ -182,24 +158,33 @@
           position: relative;
           width: 43rem;
           height: 24rem;
-          border-radius: 2%; }
+          border-radius: 2%;
+          margin-bottom: 2%; }
         #cuerpo #blog #galleryContainer #bigFotos .bigArt {
           padding: 5%; }
-        #cuerpo #blog #galleryContainer #bigFotos .bigArtTxt {
-          position: absolute;
-          bottom: 10%; }
+          #cuerpo #blog #galleryContainer #bigFotos .bigArt h3 {
+            font-weight: bold;
+            font-size: 1rem; }
+          #cuerpo #blog #galleryContainer #bigFotos .bigArt .bigArtTxt {
+            position: absolute;
+            bottom: 10%; }
+            #cuerpo #blog #galleryContainer #bigFotos .bigArt .bigArtTxt h2 {
+              font-weight: bold; }
       #cuerpo #blog #galleryContainer #smallFoto {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 2%;
         color: #202124; }
+        #cuerpo #blog #galleryContainer #smallFoto .galleryImg {
+          margin-bottom: 2%; }
         #cuerpo #blog #galleryContainer #smallFoto .artTitle {
           margin: 2%; }
       #cuerpo #blog #galleryContainer .timer {
         display: inline-flex;
         align-items: center; }
+        #cuerpo #blog #galleryContainer .timer p {
+          margin-bottom: 0; }
 
 footer {
   padding: 5%;
@@ -217,3 +202,10 @@ footer {
     justify-content: space-between;
     position: absolute;
     right: 10%; }
+    footer #redes img {
+      width: 1.3rem;
+      margin-right: 1rem; }
+
+@media only screen and (max-width: 800px) {
+  #americaDelSur {
+    width: 10%; } }
